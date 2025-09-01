@@ -1,0 +1,242 @@
+[
+  {
+    "id": "c1",
+    "slug": "largest-flotilla-for-gaza",
+    "title": "Largest flotilla for Gaza hopes to pressure Israel to end blockade",
+    "summary": [
+      "Over 50 ships from 44 nations will attempt to deliver aid",
+      "Mission aims to challenge 15-year naval blockade"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 9, "center": 12, "right": 4, "total": 29 },
+    "sourceCount": 29
+  },
+  {
+    "id": "c2",
+    "slug": "ai-safety-debate",
+    "title": "Tech leaders clash over AI safety rules as adoption accelerates",
+    "summary": [
+      "Open letters and policy proposals multiply",
+      "EU and US consider stricter guardrails"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 8, "center": 10, "right": 6, "total": 24 },
+    "sourceCount": 24
+  },
+  {
+    "id": "c3",
+    "slug": "global-markets-outlook",
+    "title": "Global markets rally as inflation cools in key economies",
+    "summary": [
+      "Central banks signal possible rate cuts",
+      "Tech and energy lead gains across indices"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 7, "center": 11, "right": 5, "total": 23 },
+    "sourceCount": 23
+  },
+  {
+    "id": "c4",
+    "slug": "wildfire-season-intensifies",
+    "title": "Wildfire season intensifies amid heatwave and drought conditions",
+    "summary": [
+      "Evacuations ordered in multiple regions",
+      "Scientists warn of longer, more severe seasons"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 10, "center": 9, "right": 4, "total": 23 },
+    "sourceCount": 23
+  },
+  {
+    "id": "c5",
+    "slug": "breakthrough-in-cancer-research",
+    "title": "Breakthrough therapy shows promise in late-stage cancer trials",
+    "summary": [
+      "Early results indicate improved survival rates",
+      "Regulators request expanded data submission"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1581594693700-9cb7c0f0b6b7?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 6, "center": 13, "right": 6, "total": 25 },
+    "sourceCount": 25
+  },
+  {
+    "id": "c6",
+    "slug": "space-agencies-moon-mission",
+    "title": "International space agencies coordinate next moon mission",
+    "summary": [
+      "Joint lunar base plans discussed",
+      "Public-private partnerships expand"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 5, "center": 12, "right": 7, "total": 24 },
+    "sourceCount": 24
+  },
+  {
+    "id": "c7",
+    "slug": "renewable-energy-milestone",
+    "title": "Renewables surpass coal in quarterly power generation milestone",
+    "summary": [
+      "Wind and solar output hit record highs",
+      "Grid operators report improved stability"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 7, "center": 10, "right": 6, "total": 23 },
+    "sourceCount": 23
+  },
+  {
+    "id": "c8",
+    "slug": "education-reform-proposals",
+    "title": "Nationwide education reform proposals spark debate",
+    "summary": [
+      "Curriculum updates target tech literacy",
+      "Teacher unions call for more funding"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 8, "center": 9, "right": 5, "total": 22 },
+    "sourceCount": 22
+  },
+  {
+    "id": "c9",
+    "slug": "breakthrough-battery-tech",
+    "title": "Breakthrough battery promises faster charging and longer life",
+    "summary": [
+      "Researchers tout scalable manufacturing",
+      "Automakers explore early partnerships"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 6, "center": 12, "right": 6, "total": 24 },
+    "sourceCount": 24
+  },
+  {
+    "id": "c10",
+    "slug": "housing-market-cooling",
+    "title": "Housing market cools as mortgage rates ease from peak",
+    "summary": [
+      "Listings rise in major metro areas",
+      "First-time buyers re-enter market"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 9, "center": 10, "right": 4, "total": 23 },
+    "sourceCount": 23
+  },
+  {
+    "id": "c11",
+    "slug": "healthcare-telemedicine-expands",
+    "title": "Telemedicine services expand amid patient satisfaction gains",
+    "summary": [
+      "Insurers broaden coverage options",
+      "Rural access improves with subsidies"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 6, "center": 11, "right": 6, "total": 23 },
+    "sourceCount": 23
+  },
+  {
+    "id": "c12",
+    "slug": "cybersecurity-breach-response",
+    "title": "Major firms tighten cybersecurity after coordinated breach",
+    "summary": [
+      "Multi-factor authentication mandated",
+      "Authorities coordinate cross-border probe"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 7, "center": 10, "right": 6, "total": 23 },
+    "sourceCount": 23
+  },
+  {
+    "id": "c13",
+    "slug": "public-transit-upgrades",
+    "title": "Cities roll out public transit upgrades to cut congestion",
+    "summary": [
+      "Bus rapid transit corridors expand",
+      "Micromobility lanes see mixed reviews"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1519751138087-5a3a37a7e23b?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 8, "center": 9, "right": 6, "total": 23 },
+    "sourceCount": 23
+  },
+  {
+    "id": "c14",
+    "slug": "tech-earnings-beat",
+    "title": "Tech giants beat earnings expectations on cloud strength",
+    "summary": [
+      "AI services drive margin expansion",
+      "Guidance lifted for next quarter"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 5, "center": 13, "right": 6, "total": 24 },
+    "sourceCount": 24
+  },
+  {
+    "id": "c15",
+    "slug": "diplomatic-talks-resume",
+    "title": "Diplomatic talks resume amid regional tensions",
+    "summary": [
+      "Mediators arrive for high-stakes summit",
+      "Ceasefire framework under discussion"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 9, "center": 9, "right": 5, "total": 23 },
+    "sourceCount": 23
+  },
+  {
+    "id": "c16",
+    "slug": "climate-adaptation-funding",
+    "title": "Climate adaptation funding targets coastal resilience projects",
+    "summary": [
+      "Community-led planning prioritized",
+      "New insurance models proposed"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 10, "center": 8, "right": 5, "total": 23 },
+    "sourceCount": 23
+  },
+  {
+    "id": "c17",
+    "slug": "sports-underdog-victory",
+    "title": "Underdog clinches championship in stunning upset",
+    "summary": [
+      "Late-game heroics seal the win",
+      "Analysts revise season rankings"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 6, "center": 10, "right": 6, "total": 22 },
+    "sourceCount": 22
+  },
+  {
+    "id": "c18",
+    "slug": "arts-festival-returns",
+    "title": "International arts festival returns with global lineup",
+    "summary": [
+      "Attendance expected to surpass pre-pandemic levels",
+      "Local venues partner for community events"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 7, "center": 9, "right": 6, "total": 22 },
+    "sourceCount": 22
+  },
+  {
+    "id": "c19",
+    "slug": "science-ocean-discovery",
+    "title": "Scientists discover new deep-ocean species in remote trench",
+    "summary": [
+      "Findings could reshape marine taxonomy",
+      "Conservation groups call for protected status"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 5, "center": 13, "right": 5, "total": 23 },
+    "sourceCount": 23
+  },
+  {
+    "id": "c20",
+    "slug": "economy-small-business-rebound",
+    "title": "Small businesses rebound as consumer confidence ticks up",
+    "summary": [
+      "Hiring plans increase modestly",
+      "Input costs stabilize across sectors"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=1600&auto=format&fit=crop",
+    "coverage": { "left": 8, "center": 10, "right": 5, "total": 23 },
+    "sourceCount": 23
+  }
+]
