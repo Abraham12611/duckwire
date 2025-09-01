@@ -1,6 +1,6 @@
 # DuckWire
-[@DuckWire](https://x.com/duckwire)
-**Website**: [duckwire.today](https://duckwire.today)
+[@DuckWire](https://x.com/inteliqiq)
+**Website**: [duckwire.today](https://duckwire.vercel.app)
 
 ![duckwire-banner](https://i.ibb.co/SWd2Yds/Chat-GPT-Image-Sep-1-2025-01-30-51-PM.png)
 
@@ -44,8 +44,7 @@
     - [Installation Steps](#installation-steps)
 
 ## Contact Us
-**Twitter**: [@DuckWire](https://x.com/duckwire)
-**Discord**: [Join our community](https://discord.gg/duckwire)
+**Twitter**: [@inteliqiq](https://x.com/inteliqiq)
 
 ## Overview
 
