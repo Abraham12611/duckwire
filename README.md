@@ -1,43 +1,8 @@
-# DuckWire (Next.js App Router + Tailwind)
-
-A Ground News–style clone scaffolded with App Router and Tailwind.
-
-## Prereqs
-- Node 18+
-
-## Install
-```bash
-npm install
-```
-
-## Run dev
-```bash
-{{ ... }}
-npm run dev
-```
-
-Then open http://localhost:3000
-
-## What’s included
-- App Router with shared `app/layout.js`, global header/footer
-- Tailwind set up in `app/globals.css` and `tailwind.config.js`
-- Placeholder routes:
-  - `/` (home), `/article/[slug]`, `/interest/[slug]`, `/search`, `/blindspot`, `/local`, `/my`, `/login`, `/subscribe`
-- Basic components: `Header`, `Footer`, `BiasBar`, interest pill scroller
-
-## Next steps
-- Flesh out components per:
-  - `project-files/pages/homepage.md`
-  - `project-files/pages/article-slug-page.md`
-  - `project-files/pages/interest-page.md`
-- Add wallet connect (wagmi/Web3Modal) targeting DuckChain
-- Add route handlers under `app/api/*` and hook to ingestion services
-
-## Twitter
-[@DuckWire](https://x.com/duckwire)  
+# DuckWire
+[@DuckWire](https://x.com/duckwire)
 **Website**: [duckwire.today](https://duckwire.today)
 
-![duckwire-banner](https://i.ibb.co/39gPtnb3/Designer.png)
+![duckwire-banner](https://i.ibb.co/SWd2Yds/Chat-GPT-Image-Sep-1-2025-01-30-51-PM.png)
 
 ## Table of Contents
 
@@ -70,7 +35,7 @@ Then open http://localhost:3000
     - [Web2 to Web3 Onboarding](#web2-to-web3-onboarding)
     - [Intuitive Interface Design](#intuitive-interface-design)
     - [Mobile-First Approach](#mobile-first-approach)
-  - [Sustainability & Business Model](#sustainability--business-model)
+  - [Sustainability \& Business Model](#sustainability--business-model)
     - [Revenue Streams](#revenue-streams)
     - [Decentralized Governance](#decentralized-governance)
     - [Long-term Roadmap](#long-term-roadmap)
@@ -79,12 +44,14 @@ Then open http://localhost:3000
     - [Installation Steps](#installation-steps)
 
 ## Contact Us
-**Twitter**: [@DuckWire](https://x.com/duckwire)  
+**Twitter**: [@DuckWire](https://x.com/duckwire)
 **Discord**: [Join our community](https://discord.gg/duckwire)
 
 ## Overview
 
 DuckWire is the world's first AI-native decentralized news verification platform, revolutionizing how society consumes and validates information. Built on DuckChain's cutting-edge infrastructure, DuckWire combines advanced AI agent orchestration with community-driven verification to create an unprecedented solution to the misinformation crisis.
+
+```
 
                     ┌─────────────────────────────────────┐
                     │           DuckWire Platform         │
