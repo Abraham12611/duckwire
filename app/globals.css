@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fdf7ec;
+  --brand-ink: #03535c;
+  --brand-accent-1: #f8a92a;
+  --brand-accent-2: #e9af1c;
+}
+
+html, body {
+  background: var(--bg);
+}
+
+/*********************************************************
+ Utilities
+**********************************************************/
+.container-max {
+  @apply max-w-[1280px] mx-auto px-4 md:px-6 lg:px-8;
+}
