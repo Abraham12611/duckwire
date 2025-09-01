@@ -1,2 +1,63 @@
+# Dependencies
 node_modules/
+.pnp
+.pnp.*
+
+# Environment variables
 .env
+.env.*.local
+!.env.local.example
+
+# Build output
+.next/
+out/
+build/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local development
+.DS_Store
+*.pem
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Supabase
+.supabase/
+
+# AI/ML models and data
+*.bin
+*.gguf
+*.h5
+*.pt
+*.pth
+*.safetensors
+
+# Local data (unless version controlled)
+data/*.json
+!data/schema/
+
+# Cache
+.cache/
+.turbo/
+
+# Misc
+coverage/
+*.log
+project-files/duckwire-onepager.md
+sample-readme.md
+project-files/Docs/Duckchain-docs (1).txt
+project-files/pages/homepage.md
+project-files/pages/interest-page.md
+project-files/clone/architecture-breakdown.md
+project-files/overview.md
+project-files/clone/article-page.md
+project-files/clone/homepage-cl.md
+project-files/clone/interest-page-cl.md
+project-files/pages/article-slug-page.md
