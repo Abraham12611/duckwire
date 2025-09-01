@@ -194,7 +194,7 @@ DuckWire's clustering system represents a quantum leap in news aggregation techn
 Implementation highlights:
 - [Story Clustering Algorithm](https://github.com/Abraham12611/duckwire/blob/main/lib/news/cluster.js): Multi-stage clustering with temporal awareness
 - [Embedding Generation](https://github.com/Abraham12611/duckwire/blob/main/lib/ai/openrouter.js): Hybrid approach using multiple embedding models
-- [Graph Connectivity Analysis](https://github.com/Abraham12611/duckwire/blob/main/lib/news/fetchAll.js): Network analysis to identify story relationships
+- [Graph Connectivity Analysis](https://github.com/Abraham12611/duckwire/blob/main/lib/clustering/GraphNeuralNetwork.js): Network analysis to identify story relationships
 
 The clustering process:
 
@@ -290,9 +290,13 @@ DuckWire's backend infrastructure scales to process millions of articles daily w
 
 Service architecture:
 - [News Ingestion Pipeline](https://github.com/Abraham12611/duckwire/blob/main/scripts/fetch-news.mjs): Automated content collection from 500+ sources
-- [AI Processing Queue](https://github.com/Abraham12611/duckwire/blob/main/lib/ai/openrouter.js): Distributed AI model inference with load balancing
+- [AI Processing Queue](https://github.com/Abraham12611/duckwire/blob/main/lib/queue/workers.js): BullMQ workers orchestrating ingestion, clustering, verification
 - [Database Layer](https://github.com/Abraham12611/duckwire/blob/main/lib/news/db.js): Optimized data storage with Supabase integration
 - [API Routes](https://github.com/Abraham12611/duckwire/blob/main/app/api): RESTful endpoints for frontend-backend communication
+
+Realtime & orchestration:
+- [WebSocket Server](https://github.com/Abraham12611/duckwire/blob/main/lib/realtime/WebSocketServer.js): Socket.IO bridge for live cluster updates (start via `scripts/ws-server.mjs`)
+- [Agents Supervisor](https://github.com/Abraham12611/duckwire/blob/main/scripts/agents.mjs): Boots BullMQ workers defined in `lib/agents/` and `lib/queue/`
 
 Data sources integration:
 - [NewsAPI.org](https://github.com/Abraham12611/duckwire/blob/main/lib/news/providers): Comprehensive news coverage
@@ -375,7 +379,7 @@ Governance structure:
 
 DuckWire's development roadmap extends the platform's mission of combating misinformation across multiple media formats and platforms.
 
-**Phase 1 (Completed)**: News Aggregation & Verification
+**Phase 1**: News Aggregation & Verification
 - AI-powered story clustering and bias detection
 - Stake-weighted community verification system
 - DuckChain integration with unified gas payments
@@ -407,29 +411,51 @@ To run DuckWire locally, you'll need the following environment configuration:
 
 ```bash
 # .env.local
-# DuckChain Network Configuration
+
+## Wallet / UI
+# WalletConnect Cloud project ID for RainbowKit/Wagmi
+NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=
+
+## News provider API keys (server-side only)
+# NewsAPI.org — https://newsapi.org/
+NEWSAPI_ORG_KEY=
+# GNews — https://gnews.io/
+GNEWS_API_KEY=
+# NewsData.io — https://newsdata.io/
+NEWSDATA_API_KEY=
+# ChainGPT — https://chaingpt.org/
+CHAINGPT_API_KEY=
+# Event Registry (NewsAPI.ai) — https://eventregistry.org/
+NEWSAPI_AI_API_KEY=
+
+## Supabase
+SUPABASE_URL=
+SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+ADMIN_COOKIE_SECRET=
+
+## OpenRouter (AI routing)
+OPENROUTER_API_KEY=
+# Optional overrides
+OPENROUTER_BASE_URL=
+OPENROUTER_APP_NAME=DuckWire/Clustering
+
+## Realtime / WebSocket
+WS_PORT=4001
+NEXT_PUBLIC_WS_URL=http://localhost:4001
+
+## Redis (for websocket scaling and queues)
+REDIS_URL=redis://localhost:6379
+
+## Queues (BullMQ)
+QUEUE_PREFIX=duckwire
+
+## Optional DuckChain config (for future on-chain modules)
 NEXT_PUBLIC_DUCKCHAIN_MAINNET_RPC=https://rpc.duckchain.io
 NEXT_PUBLIC_DUCKCHAIN_TESTNET_RPC=https://testnet-rpc.duckchain.io
 NEXT_PUBLIC_DUCKCHAIN_EXPLORER=https://scan.duckchain.io
 
-# AI Model Integration
-OPENAI_API_KEY=your_openai_api_key
-OPENROUTER_API_KEY=your_openrouter_api_key
-
-# News API Keys
-NEWSAPI_KEY=your_newsapi_key
-GNEWS_API_KEY=your_gnews_api_key
-NEWSDATA_API_KEY=your_newsdata_api_key
-CHAINGPT_API_KEY=your_chaingpt_api_key
-
-# Database Configuration
-SUPABASE_URL=your_supabase_url
-SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_key
-
-# Wallet Integration
-NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=your_walletconnect_project_id
-
-# $DUCK Token Contract
+## Optional $DUCK Contracts (if deploying locally)
 NEXT_PUBLIC_DUCK_TOKEN_ADDRESS=0x...
 NEXT_PUBLIC_STAKING_CONTRACT_ADDRESS=0x...
 NEXT_PUBLIC_BOUNTY_CONTRACT_ADDRESS=0x...
@@ -449,23 +475,27 @@ npm install
 cp .env.local.example .env.local
 # Edit .env.local with your API keys and configuration
 
-# STEP 4: Initialize the database
-npm run db:setup
-
-# STEP 5: Start the development server
+# STEP 4: Start the development server
 npm run dev
 
-# STEP 6: Run background services (in separate terminals)
-npm run worker:ingestion    # News ingestion pipeline
-npm run worker:clustering   # Story clustering service
-npm run worker:verification # Verification bounty processor
+# STEP 5: Run background services (in separate terminals)
+# Realtime websocket bridge for live updates
+npm run ws
+# Agents supervisor (BullMQ workers: ingestion/clustering/verification)
+npm run agents
 
-# STEP 7: Deploy smart contracts (testnet)
+# STEP 6 (optional): Fetch the latest news locally and persist to Supabase
+npm run fetch:news
+
+# STEP 7 (optional): Inspect recently generated clusters (requires Supabase env)
+node -r dotenv/config scripts/check-clusters.mjs
+
+# STEP 8 (optional): Deploy smart contracts (testnet)
 npm run deploy:testnet
 
-# STEP 8: Seed initial data
-npm run seed:sources       # Add news sources
-npm run seed:test-data     # Add sample articles for testing
+# Dev tips
+# - Compile contracts: npm run compile
+# - Run tests: npm test
 ```
 
 The application will be available at `http://localhost:3000` with full functionality including:
@@ -484,4 +514,4 @@ For production deployment, additional configuration is required for:
 
 ---
 
-DuckWire represents the future of news consumption and verification, combining cutting-edge AI technology with blockchain-based economic incentives to create the world's most accurate and transparent news platform. Join us in building a more informed society, one verified story at a time.
+DuckWire represents the future of news consumption and verification, combining cutting-edge AI technology with blockchain-based economic incentives to create the world's most accurate and transparent news platform. Join us in building a more informed society, one verified story at a time
